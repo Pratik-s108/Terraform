@@ -1,0 +1,12 @@
+variable "region" {
+}
+variable "ami_id" {
+}
+variable "instance_type" {
+}
+variable "name1" {
+}
+variable "name2" {
+}
+variable "project" {
+}

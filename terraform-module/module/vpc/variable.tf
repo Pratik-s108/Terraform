@@ -1,0 +1,9 @@
+variable "vpc_cidr_block" {}
+variable "public_sub_cidr" {}
+variable "public_sub2_cidr" {}
+variable "private_sub_cidr" {}
+variable "project" {}
+variable "region" {}
+variable "az1" {}
+variable "az2" {}
+variable "az3" {}

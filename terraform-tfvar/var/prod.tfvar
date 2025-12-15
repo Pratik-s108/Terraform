@@ -1,0 +1,4 @@
+ami_id = "ami-02b8269d5e85954ef"
+instance_type = "m7i-flex.large"
+instance_name = "ubuntu-instance-prod"
+env = "prod"
