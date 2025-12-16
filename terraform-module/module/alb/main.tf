@@ -63,3 +63,21 @@ resource "aws_lb_listener" "http_listener" {
     target_group_arn = aws_lb_target_group.my_tg.arn
   }
 }
+
+resource "aws_lb_listener_rule" "mobile" {
+  listener_arn = aws_lb_listener.http_listener.arn
+  priority     = 100
+
+  action {
+
+    
+    type = "forward"
+    target_group_arn = aws_lb_target_group.my_tg.arn
+  }
+
+  condition {
+    path_pattern {
+      values = ["/mobile*"]
+    }
+  }
+}
